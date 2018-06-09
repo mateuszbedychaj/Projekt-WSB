@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Tanie AUTA</title>
+	<meta name="description" content="Serwis poświęcony systemowi Linux. Naucz się wszystkiego, co chcesz wiedzieć o Linuxie!"
+	/>
+	<meta name="keywords" content="linux, kurs, nauka, poznaj, co to jest linux, ubuntu, debian, mint, fedora, wybierz dystrybucję, instalacja linux, polecenia, terminal, bash"
+	/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="stylesheet" href="projekt.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="logo">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+
+					<img src="logo1.jpg" style="width:100%">
+
+				</div>
+
+				<div class="mySlides fade">
+
+					<img src="logo2.jpg" style="width:100%">
+
+				</div>
+
+				<div class="mySlides fade">
+
+					<img src="logo3.jpg" style="width:100%">
+
+				</div>
+				<div style="text-align:center; height: 0px;">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+
+
+		
+		
+			
+
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) { slideIndex = 1 }
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+					setTimeout(showSlides, 2500); // Change image every 2 seconds
+				}
+			</script>
+		</div>
+
+		<div id="menu">
+			<div class="option">
+				<a href="projekt.html">Strona główna</a>
+			</div>
+			<div class="option">
+				<a href="Promocje.html">Promocje</a>
+			</div>
+			<div class="option">
+				<a href="Oferta.html">Oferta</a>
+			</div>
+			<div class="option">
+				<a href="O nas.html">O nas</a>
+			</div>
+			<div class="option">
+				<a href="Kontakt.html">Kontakt</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+
+		<div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="/action_page.php">
+                
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Adres rozliczeniowy</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Pełne imię i nazwisko</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Imię">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder=" Email">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Adres</label>
+                      <input type="text" id="adr" name="address" placeholder="Pełen adres">
+                      <label for="city"><i class="fa fa-institution"></i> Miasto</label>
+                      <input type="text" id="city" name="city" placeholder="Twoje miasto">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">Wpisz Auto</label>
+                          <input type="text" id="state" name="Model auta" placeholder="Model auta">
+                        </div>
+												<div class="col-50">
+                          <label for="state">Okres wypożyczenia</label>
+                          <input type="text" id="state" name="Dni" placeholder="Dni">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Karta</h3>
+                      <label for="fname">Akceptowalne karty</label>
+                      <div class="icon-container">
+                    <img src="carta1.png" style="width:33px; height: 33px; ">
+                    <img src="carta2.png" style="width:33px; height: 33px;">
+                    <img src="carta3.png" style="width:33px; height: 33px;   ">
+                    <img src="carta4.png" style="width:33px; height: 33px;   ">
+                      </div>
+                      <label for="cname">Imię na karcie</label>
+                      <input type="text" id="cname" name="cardname" placeholder="Imię i Nazwisko">
+                      <label for="ccnum">
+												Numer karty kredytowej</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Miesiąc wydania</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="Miesiąc">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Rok wydania</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="Rok">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">3 oststnie cyfry</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Wystawienie Faktury
+                  </label>
+                  <input type="submit" value="Zapłać" class="btn">
+                </form>
+              </div>
+            </div>
+           
+          </div>
+          <div id="footer">
+			Wypożyczalnia samochodów MATI-Motors tel. 600-500-400  mati-motors@gmail.com&copy; Wszelkie prawa zastrzeżone
+		</div>
+</body>
+
+</html>

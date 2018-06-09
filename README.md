@@ -1,3 +1,0 @@
-# Projekt-WSB
-# projekt
-# projekt
